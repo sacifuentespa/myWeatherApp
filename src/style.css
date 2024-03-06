@@ -1,0 +1,25 @@
+/*general styles*/
+* {
+    --topColor: #222831;
+    --menusColor: #393E46;
+    --mainColor: #00ADB5;
+    --footerColor: #EEEEEE;
+
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainDiv{
+    height: 100%;
+}
+/*header and menu styles*/
