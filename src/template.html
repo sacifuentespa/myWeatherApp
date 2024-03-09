@@ -9,7 +9,7 @@
 
 <body>
     <header>
-        <div id="titleDiv">My Weather App</div>
+        <h1>My Weather App</h1>
         <div id="searchDiv">
             <form>
                 <input type="text" pattern="^[a-zA-Z]*$">
@@ -17,10 +17,18 @@
             </form>
         </div>
     </header>
-    <div class="mainDiv"></div>
+    <div class="mainDiv">
+        <h2>The weather in</h2>
+        <div class="weatherInfoDiv">
+            <h4 id="weatherCondition"></h4>
+            <h4 id="weatherTemperature"></h4>
+            <img id="weatherIcon">
+            <h4 id="apparentTemperature"></h4>
+        </div>
+    </div>
     <footer>Powered by <a href="https://github.com/sacifuentespa">
-        Santiago Cifuentes
-    </a></footer>
+            Santiago Cifuentes
+        </a></footer>
 </body>
 
 </html>
