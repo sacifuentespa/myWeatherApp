@@ -11,9 +11,9 @@
     <header>
         <h1>My Weather App</h1>
         <div id="searchDiv">
-            <form>
+            <form class="citySearch">
                 <input type="text" pattern="^[a-zA-Z]*$">
-                <button type="submit">Search</button>
+                <button type="submit" placeholder="Search for the city">Search</button>
             </form>
         </div>
     </header>
@@ -26,6 +26,8 @@
             <h4 id="weatherTemperature"></h4>
             <img id="weatherIcon">
             <h4 id="apparentTemperature"></h4>
+            <label for="farenheit">Show temperature in Farenheit</label>
+            <input type="checkbox" name="farenheit">
         </div>
     </div>
     <footer>Powered by  <a href="https://github.com/sacifuentespa">

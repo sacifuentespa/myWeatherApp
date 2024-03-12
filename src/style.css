@@ -52,6 +52,11 @@ header form{
     align-items: center;
 }
 
+label{
+    margin: 8px;
+}
+
+/*footer styles*/
 footer {
     display: flex;
     align-items: center;
