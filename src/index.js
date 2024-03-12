@@ -3,13 +3,12 @@ import './style.css';
 
 import githubIcon from './public/icons/github.png';
 
-const searchButton = document.querySelector('button');
 const h2City = document.querySelector('h2');
+const h3Time = document.querySelector('h3');
 const inputText = document.querySelector('input');
 const searchForm = document.querySelector('form');
 
 // Variables for the parameters changed 
-const weatherInfoDiv = document.querySelector('.weatherInfoDiv');
 const cityTemperature = document.querySelector('#weatherTemperature');
 const cityCondition = document.querySelector('#weatherCondition');
 const cityWeatherIcon = document.querySelector('#weatherIcon');
@@ -25,8 +24,9 @@ async function fetchWeather(city){
 
 // function to change the frontend
 
-function changeCityFront (json){
-    h2City.textContent = `The weather in ${json.location.name}, ${json.location.country}. Local time ${json.location.localtime}`;
+function changeCityFront (json){ 
+    h2City.textContent = `The weather in ${json.location.name}, ${json.location.country}.`;
+    h3Time.textContent = `Local time ${json.location.localtime}`
     cityWeatherIcon.src = `https://${json.current.condition.icon}`;
     cityCondition.textContent = `${json.current.condition.text}`;
     cityTemperature.textContent = `Temperature: ${json.current.temp_c} C°`;

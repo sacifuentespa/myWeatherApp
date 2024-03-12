@@ -1,10 +1,10 @@
 /*general styles*/
 * {
-    --topColor: #222831;
-    --menusColor: #393E46;
-    --mainColor: #00ADB5;
-    --footerColor: #EEEEEE;
-
+    --topColor: black;
+    --topTextColor: whitesmoke; 
+    --mainColor: #222831;
+    --mainText: #black;
+    --footerColor: #222831;
 }
 
 body,
@@ -19,7 +19,51 @@ body {
     flex-direction: column;
 }
 
+/* header styles */
+
+header{
+    background-color: var(--topColor);
+    color: var(--topTextColor);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header form{
+    margin-bottom: 8px;
+}
+
+/*Main Div styles*/
+
 .mainDiv{
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--mainColor);
 }
-/*header and menu styles*/
+
+.weatherInfoDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: var(--footerColor);
+}
+
+footer p a img {
+    width: 1em;
+}
+
+a{
+    padding-left: .2em;
+}
