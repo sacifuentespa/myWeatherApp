@@ -72,3 +72,7 @@ footer p a img {
 a{
     padding-left: .2em;
 }
+
+a:visited {
+    color: blue;
+}
