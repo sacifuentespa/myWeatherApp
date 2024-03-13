@@ -42,7 +42,6 @@ header form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: var(--mainColor);
     overflow-y: auto;
 }
