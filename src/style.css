@@ -52,6 +52,11 @@ header form{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    height: 100%;
+}
+
+h2{
+    margin: 1em;
 }
 
 label{
@@ -78,9 +83,3 @@ a{
 a:visited {
     color: blue;
 }
-
-.weatherInfoDiv{
-    height: 100%;
-}
-
-
