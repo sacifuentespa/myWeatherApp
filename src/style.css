@@ -78,7 +78,7 @@ a:visited {
 }
 
 /* Add media queries for smaller screen sizes */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     /* Adjust the height of mainDiv for smaller screens */
     .mainDiv {
         height: auto; /* Adjust height automatically based on content */
